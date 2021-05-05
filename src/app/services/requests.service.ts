@@ -14,8 +14,4 @@ export class RequestsService {
   doGet(route) {
     return this.http.get<Results>(this.API + route);
   }
-
-  getTeste() {
-    return this.http.get("https://triboos.me/api/v1/eventos/");
-  }
 }
