@@ -19,7 +19,6 @@ export class CharactersComponent implements OnInit {
 
   ngOnInit() {
     this.getCharacters();
-    this.getTesteTriboos();
   }
 
   getIdFromUrl(url) {
@@ -28,12 +27,6 @@ export class CharactersComponent implements OnInit {
 
   imageUrl(id) {
     return `../../assets/images/characters/${id}.jpg`;
-  }
-
-  getTesteTriboos() {
-    this.request.getTeste().subscribe((data) => {
-      console.log(data);
-    });
   }
 
   getCharacters() {
